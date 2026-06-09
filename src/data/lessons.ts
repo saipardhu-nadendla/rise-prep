@@ -1,0 +1,248 @@
+export type Tier = "free" | "paid";
+
+export interface Lesson {
+  id: string;
+  title: string;
+  module: string;
+  subject: "math" | "english";
+  tier: Tier;
+  videoUrl: string;
+  description: string;
+}
+
+export const lessons: Lesson[] = [
+  // ── FREE: Math ──────────────────────────────────────────────────────────
+  {
+    id: "desmos-intro-1",
+    title: "Getting Started with Desmos",
+    module: "Desmos Intro",
+    subject: "math",
+    tier: "free",
+    videoUrl: "",
+    description: "How to navigate and use the Desmos graphing calculator on the SAT.",
+  },
+  {
+    id: "desmos-intro-2",
+    title: "Graphing Equations on Desmos",
+    module: "Desmos Intro",
+    subject: "math",
+    tier: "free",
+    videoUrl: "",
+    description: "Using Desmos to graph linear and quadratic equations quickly.",
+  },
+  {
+    id: "desmos-intro-3",
+    title: "Solving Systems with Desmos",
+    module: "Desmos Intro",
+    subject: "math",
+    tier: "free",
+    videoUrl: "",
+    description: "Finding intersection points and solving systems visually.",
+  },
+
+  // ── FREE: English ────────────────────────────────────────────────────────
+  {
+    id: "sec-1",
+    title: "Punctuation Fundamentals",
+    module: "Standard English Conventions",
+    subject: "english",
+    tier: "free",
+    videoUrl: "",
+    description: "Commas, semicolons, colons, and dashes — when to use each.",
+  },
+  {
+    id: "sec-2",
+    title: "Subject-Verb Agreement",
+    module: "Standard English Conventions",
+    subject: "english",
+    tier: "free",
+    videoUrl: "",
+    description: "Matching subjects and verbs correctly, even with tricky sentence structures.",
+  },
+  {
+    id: "sec-3",
+    title: "Pronoun Usage",
+    module: "Standard English Conventions",
+    subject: "english",
+    tier: "free",
+    videoUrl: "",
+    description: "Pronoun-antecedent agreement and pronoun case on the SAT.",
+  },
+  {
+    id: "sec-4",
+    title: "Sentence Boundaries",
+    module: "Standard English Conventions",
+    subject: "english",
+    tier: "free",
+    videoUrl: "",
+    description: "Fixing run-ons, comma splices, and sentence fragments.",
+  },
+
+  // ── PAID: Math ───────────────────────────────────────────────────────────
+  {
+    id: "desmos-advanced-1",
+    title: "Advanced Desmos Strategies",
+    module: "Full Desmos + Advanced",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Advanced calculator techniques that save time on hard SAT math questions.",
+  },
+  {
+    id: "desmos-advanced-2",
+    title: "Regression and Data Modeling",
+    module: "Full Desmos + Advanced",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Using Desmos for regression analysis and interpreting data models.",
+  },
+  {
+    id: "geo-trig-1",
+    title: "Geometry Fundamentals",
+    module: "Geometry & Trig",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Angles, triangles, circles, and area/volume on the SAT.",
+  },
+  {
+    id: "geo-trig-2",
+    title: "Trigonometry Essentials",
+    module: "Geometry & Trig",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "SOH-CAH-TOA, unit circle basics, and trig on the SAT.",
+  },
+  {
+    id: "algebra-1",
+    title: "Linear Equations & Inequalities",
+    module: "Algebra & Linear Equations",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Solving and graphing linear equations, systems, and inequalities.",
+  },
+  {
+    id: "algebra-2",
+    title: "Linear Word Problems",
+    module: "Algebra & Linear Equations",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Translating real-world scenarios into linear equations.",
+  },
+  {
+    id: "adv-algebra-1",
+    title: "Quadratics & Polynomials",
+    module: "Advanced Algebra",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Factoring, completing the square, and the quadratic formula.",
+  },
+  {
+    id: "adv-algebra-2",
+    title: "Exponential Functions",
+    module: "Advanced Algebra",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Growth, decay, and exponential equations on the SAT.",
+  },
+  {
+    id: "psda-1",
+    title: "Statistics & Data Interpretation",
+    module: "Problem Solving & Data Analysis",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Mean, median, standard deviation, and reading data displays.",
+  },
+  {
+    id: "psda-2",
+    title: "Ratios, Rates & Proportions",
+    module: "Problem Solving & Data Analysis",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Ratios, unit conversion, and proportional reasoning.",
+  },
+  {
+    id: "psda-3",
+    title: "Percentages & Probability",
+    module: "Problem Solving & Data Analysis",
+    subject: "math",
+    tier: "paid",
+    videoUrl: "",
+    description: "Percent change, probability calculations, and expected value.",
+  },
+
+  // ── PAID: English ────────────────────────────────────────────────────────
+  {
+    id: "info-ideas-1",
+    title: "Main Idea & Central Claim",
+    module: "Information & Ideas",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Identifying the central argument and purpose of a passage.",
+  },
+  {
+    id: "info-ideas-2",
+    title: "Evidence & Support",
+    module: "Information & Ideas",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Finding the best textual evidence to support a claim.",
+  },
+  {
+    id: "info-ideas-3",
+    title: "Inferences & Conclusions",
+    module: "Information & Ideas",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Drawing logical inferences from passages and data.",
+  },
+  {
+    id: "craft-structure-1",
+    title: "Words in Context",
+    module: "Craft & Structure",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Choosing the most precise word or phrase for a given context.",
+  },
+  {
+    id: "craft-structure-2",
+    title: "Text Structure & Purpose",
+    module: "Craft & Structure",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Analyzing how paragraphs and passages are structured.",
+  },
+  {
+    id: "eoi-1",
+    title: "Transitions & Flow",
+    module: "Expression of Ideas",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Choosing effective transitions and improving passage coherence.",
+  },
+  {
+    id: "eoi-2",
+    title: "Rhetorical Synthesis",
+    module: "Expression of Ideas",
+    subject: "english",
+    tier: "paid",
+    videoUrl: "",
+    description: "Combining information from multiple sources into a cohesive statement.",
+  },
+];
+
+export const modules = [...new Set(lessons.map((l) => l.module))];
