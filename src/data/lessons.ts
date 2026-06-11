@@ -48,7 +48,7 @@ export const lessons: Lesson[] = [
     subject: "english",
     tier: "free",
     videoUrl: "",
-    description: "Commas, semicolons, colons, and dashes — when to use each.",
+    description: "Commas, semicolons, colons, and dashes: when to use each.",
   },
   {
     id: "sec-2",

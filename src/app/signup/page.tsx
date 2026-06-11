@@ -52,7 +52,7 @@ export default function SignupPage() {
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-extrabold text-gray-900">Create your account</h1>
-            <p className="mt-2 text-sm text-gray-500">Start with free access — upgrade anytime</p>
+            <p className="mt-2 text-sm text-gray-500">Start with free access. Upgrade anytime.</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -63,7 +63,7 @@ export default function SignupPage() {
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
                 placeholder="Your name"
               />
             </div>
@@ -74,7 +74,7 @@ export default function SignupPage() {
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
                 placeholder="you@email.com"
               />
             </div>
@@ -86,7 +86,7 @@ export default function SignupPage() {
                 minLength={8}
                 value={form.password}
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent"
                 placeholder="At least 8 characters"
               />
             </div>
@@ -100,15 +100,15 @@ export default function SignupPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 px-4 rounded-lg bg-blue-700 text-white text-sm font-bold hover:bg-blue-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full py-2.5 px-4 rounded-lg bg-navy text-white text-sm font-bold hover:bg-navy-dark transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {loading ? "Creating account…" : "Create free account"}
+              {loading ? "Creating account..." : "Create free account"}
             </button>
           </form>
 
           <p className="mt-6 text-center text-sm text-gray-500">
             Already have an account?{" "}
-            <Link href="/login" className="text-blue-700 font-medium hover:underline">
+            <Link href="/login" className="text-navy font-medium hover:underline">
               Log in
             </Link>
           </p>

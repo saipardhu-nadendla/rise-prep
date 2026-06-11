@@ -14,9 +14,9 @@ const fileTypeLabels: Record<Resource["fileType"], string> = {
 
 const fileTypeColors: Record<Resource["fileType"], string> = {
   pdf: "bg-red-100 text-red-700",
-  doc: "bg-blue-100 text-blue-700",
+  doc: "bg-navy-light text-navy",
   sheet: "bg-green-100 text-green-700",
-  link: "bg-purple-100 text-purple-700",
+  link: "bg-gold-light text-gold-dark",
 };
 
 function ResourceCard({ resource, userTier }: { resource: Resource; userTier: string }) {
@@ -45,7 +45,7 @@ function ResourceCard({ resource, userTier }: { resource: Resource; userTier: st
           className={`flex-shrink-0 text-xs font-bold px-2 py-0.5 rounded-full ${
             resource.tier === "free"
               ? "bg-green-100 text-green-700"
-              : "bg-blue-100 text-blue-700"
+              : "bg-navy-light text-navy"
           }`}
         >
           {resource.tier}
@@ -57,9 +57,9 @@ function ResourceCard({ resource, userTier }: { resource: Resource; userTier: st
             href={resource.fileUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs text-blue-700 font-semibold hover:underline"
+            className="inline-flex items-center gap-1.5 text-xs text-navy font-semibold hover:underline"
           >
-            {resource.fileType === "link" ? "Open →" : "Download →"}
+            {resource.fileType === "link" ? "Open" : "Download"}
           </a>
         ) : (
           <p className="text-xs text-gray-400 italic">File coming soon</p>
@@ -74,7 +74,6 @@ export default async function ResourcesPage() {
   if (!session) redirect("/login?callbackUrl=/resources");
 
   const userTier = session.user.tier ?? "free";
-
   const categories = [...new Set(resources.map((r) => r.category))];
 
   return (
@@ -91,9 +90,9 @@ export default async function ResourcesPage() {
             {userTier === "free" && (
               <Link
                 href="/membership"
-                className="inline-flex items-center px-5 py-2.5 rounded-full bg-blue-700 text-white text-sm font-bold hover:bg-blue-800 transition-colors shadow-sm"
+                className="inline-flex items-center px-5 py-2.5 rounded-full bg-navy text-white text-sm font-bold hover:bg-navy-dark transition-colors shadow-sm"
               >
-                Unlock all resources →
+                Unlock all resources
               </Link>
             )}
           </div>

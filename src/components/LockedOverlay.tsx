@@ -14,9 +14,9 @@ export default function LockedOverlay() {
       <p className="text-xs font-semibold text-gray-500">Paid tier</p>
       <Link
         href="/membership"
-        className="text-xs text-blue-700 font-bold hover:underline"
+        className="text-xs text-navy font-bold hover:underline"
       >
-        Upgrade →
+        Upgrade
       </Link>
     </div>
   );

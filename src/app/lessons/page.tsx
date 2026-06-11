@@ -26,7 +26,7 @@ function LessonCard({ lesson, userTier }: { lesson: Lesson; userTier: string }) 
           className={`flex-shrink-0 text-xs font-bold px-2 py-0.5 rounded-full ${
             lesson.tier === "free"
               ? "bg-green-100 text-green-700"
-              : "bg-blue-100 text-blue-700"
+              : "bg-navy-light text-navy"
           }`}
         >
           {lesson.tier}
@@ -37,9 +37,9 @@ function LessonCard({ lesson, userTier }: { lesson: Lesson; userTier: string }) 
           href={lesson.videoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 inline-flex items-center gap-1.5 text-xs text-blue-700 font-semibold hover:underline"
+          className="mt-3 inline-flex items-center gap-1.5 text-xs text-navy font-semibold hover:underline"
         >
-          ▶ Watch lesson
+          Watch lesson
         </a>
       )}
       {!locked && !lesson.videoUrl && (
@@ -102,9 +102,9 @@ export default async function LessonsPage() {
             {userTier === "free" && (
               <Link
                 href="/membership"
-                className="inline-flex items-center px-5 py-2.5 rounded-full bg-blue-700 text-white text-sm font-bold hover:bg-blue-800 transition-colors shadow-sm"
+                className="inline-flex items-center px-5 py-2.5 rounded-full bg-navy text-white text-sm font-bold hover:bg-navy-dark transition-colors shadow-sm"
               >
-                Unlock all lessons →
+                Unlock all lessons
               </Link>
             )}
           </div>

@@ -22,7 +22,7 @@ export default async function AccountPage() {
           <div className="space-y-3">
             <div className="flex items-center justify-between py-2 border-b border-gray-100">
               <span className="text-sm text-gray-500">Name</span>
-              <span className="text-sm font-semibold text-gray-900">{name ?? "—"}</span>
+              <span className="text-sm font-semibold text-gray-900">{name ?? "N/A"}</span>
             </div>
             <div className="flex items-center justify-between py-2 border-b border-gray-100">
               <span className="text-sm text-gray-500">Email</span>
@@ -33,39 +33,39 @@ export default async function AccountPage() {
               <span
                 className={`text-sm font-bold px-3 py-1 rounded-full ${
                   isPaid
-                    ? "bg-blue-100 text-blue-700"
+                    ? "bg-navy-light text-navy"
                     : "bg-green-100 text-green-700"
                 }`}
               >
-                {isPaid ? "Paid — Full Access" : "Free"}
+                {isPaid ? "Paid - Full Access" : "Free"}
               </span>
             </div>
           </div>
         </div>
 
-        {/* Upgrade section — only shown to free users */}
+        {/* Upgrade section */}
         {!isPaid && (
-          <div className="bg-white rounded-2xl border border-blue-200 shadow-sm p-6 mb-6">
+          <div className="bg-white rounded-2xl border border-navy/30 shadow-sm p-6 mb-6">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
               Upgrade to paid
             </h2>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               Unlock all lessons, video explanations, the complete question bank, advanced study
-              schedules, and Google Classroom access — for a one-time payment of <strong>~$29</strong>.
+              schedules, and Google Classroom access for a one-time payment of <strong>~$29</strong>.
             </p>
-            <div className="bg-blue-50 rounded-xl p-4 text-sm text-gray-700 space-y-2">
+            <div className="bg-navy-light rounded-xl p-4 text-sm text-gray-700 space-y-2">
               <p>
                 <strong>Step 1:</strong> Send ~$29 via{" "}
                 <strong>Venmo (@riseprep)</strong> or{" "}
-                <strong>PayPal (advait.aadhya@gmail.com)</strong>.
+                <strong>PayPal (saipardhu.nadendla@gmail.com)</strong>.
               </p>
               <p>
                 <strong>Step 2:</strong> Email{" "}
                 <a
-                  href="mailto:advait.aadhya@gmail.com"
-                  className="text-blue-700 underline"
+                  href="mailto:saipardhu.nadendla@gmail.com"
+                  className="text-navy underline"
                 >
-                  advait.aadhya@gmail.com
+                  saipardhu.nadendla@gmail.com
                 </a>{" "}
                 with the subject line &ldquo;Rise Prep Upgrade&rdquo; and include the email address
                 on this account (<strong>{email}</strong>).
@@ -76,9 +76,9 @@ export default async function AccountPage() {
             </div>
             <Link
               href="/membership"
-              className="mt-4 inline-flex items-center text-sm text-blue-700 font-semibold hover:underline"
+              className="mt-4 inline-flex items-center text-sm text-navy font-semibold hover:underline"
             >
-              See everything that&apos;s included →
+              See everything that&apos;s included
             </Link>
           </div>
         )}
@@ -91,21 +91,21 @@ export default async function AccountPage() {
           <div className="space-y-2">
             <Link
               href="/lessons"
-              className="flex items-center justify-between py-2 text-sm text-gray-700 hover:text-blue-700 transition-colors"
+              className="flex items-center justify-between py-2 text-sm text-gray-700 hover:text-navy transition-colors"
             >
               <span>Go to Lessons</span>
               <span className="text-gray-400">→</span>
             </Link>
             <Link
               href="/resources"
-              className="flex items-center justify-between py-2 text-sm text-gray-700 hover:text-blue-700 transition-colors border-t border-gray-100"
+              className="flex items-center justify-between py-2 text-sm text-gray-700 hover:text-navy transition-colors border-t border-gray-100"
             >
               <span>Go to Resources</span>
               <span className="text-gray-400">→</span>
             </Link>
             <Link
               href="/booking"
-              className="flex items-center justify-between py-2 text-sm text-gray-700 hover:text-blue-700 transition-colors border-t border-gray-100"
+              className="flex items-center justify-between py-2 text-sm text-gray-700 hover:text-navy transition-colors border-t border-gray-100"
             >
               <span>Book a 1-on-1 session</span>
               <span className="text-gray-400">→</span>

@@ -14,7 +14,10 @@
       "Bash(npm run *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
       "Bash(pkill -f \"next dev\")",
-      "Bash(curl -s \"https://nextjs.org/docs/messages/middleware-to-proxy\")"
+      "Bash(curl -s \"https://nextjs.org/docs/messages/middleware-to-proxy\")",
+      "Bash(grep *)",
+      "Bash(cp /Users/sainadendla/Downloads/RisePrep.png /Users/sainadendla/rise-prep/public/logo.png)",
+      "Bash(cp /Users/sainadendla/Downloads/RisePrep.png /Users/sainadendla/rise-prep/src/app/icon.png)"
     ]
   }
 }

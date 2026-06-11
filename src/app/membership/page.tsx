@@ -5,19 +5,19 @@ const freeFeatures = [
   "Standard English Conventions lessons (4 lessons)",
   "Practice question bank (free edition)",
   "4-week SAT study schedule",
-  "Bluebook app tips & tricks",
+  "Bluebook app tips and tricks",
   "SAT roadmap (format, scoring, structure)",
-  "SAT cheat sheet (formulas & grammar rules)",
+  "SAT cheat sheet (formulas and grammar rules)",
 ];
 
 const paidFeatures = [
   "Everything in the Free tier",
-  "Full math lessons — all 5 modules",
-  "Full English lessons — all 3 modules",
+  "Full math lessons across all 5 modules",
+  "Full English lessons across all 3 modules",
   "Video explanations for every lesson",
   "Complete question bank (all topics)",
   "8-week and 12-week study schedules",
-  "Test day tips & checklist",
+  "Test day tips and checklist",
   "T25 college stats guide",
   "Error log template",
   "Score tracker spreadsheet",
@@ -27,7 +27,7 @@ const paidFeatures = [
 
 function CheckIcon() {
   return (
-    <svg className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="h-5 w-5 text-navy flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
     </svg>
   );
@@ -50,10 +50,10 @@ export default function MembershipPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-16 text-center">
+      <section className="bg-gradient-to-br from-navy to-navy-dark text-white py-16 text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-extrabold">Simple, honest pricing</h1>
-          <p className="mt-4 text-blue-100 text-lg">
+          <p className="mt-4 text-white/80 text-lg">
             Start free. Upgrade once. Everything you need to hit your target score.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function MembershipPage() {
                 <p className="mt-2 text-sm text-gray-500">No credit card required.</p>
                 <Link
                   href="/signup"
-                  className="mt-6 block w-full text-center py-3 px-4 rounded-full border-2 border-blue-700 text-blue-700 font-bold text-sm hover:bg-blue-50 transition-colors"
+                  className="mt-6 block w-full text-center py-3 px-4 rounded-full border-2 border-navy text-navy font-bold text-sm hover:bg-navy-light transition-colors"
                 >
                   Get started free
                 </Link>
@@ -89,22 +89,22 @@ export default function MembershipPage() {
             </div>
 
             {/* Paid tier */}
-            <div className="bg-white rounded-2xl border-2 border-blue-700 shadow-lg overflow-hidden flex flex-col relative">
+            <div className="bg-white rounded-2xl border-2 border-navy shadow-lg overflow-hidden flex flex-col relative">
               <div className="absolute top-0 right-0 mt-4 mr-4">
-                <span className="inline-block bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full">
+                <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full">
                   Most popular
                 </span>
               </div>
-              <div className="p-8 border-b border-blue-100 bg-blue-700 text-white">
-                <p className="text-sm font-semibold text-blue-200 uppercase tracking-wider">Paid</p>
+              <div className="p-8 border-b border-navy/20 bg-navy text-white">
+                <p className="text-sm font-semibold text-gold uppercase tracking-wider">Paid</p>
                 <div className="mt-3 flex items-baseline gap-1">
                   <span className="text-5xl font-extrabold">~$29</span>
-                  <span className="text-blue-200 text-sm">one-time</span>
+                  <span className="text-white/70 text-sm">one-time</span>
                 </div>
-                <p className="mt-2 text-sm text-blue-200">Pay via Venmo or PayPal. No subscriptions, ever.</p>
+                <p className="mt-2 text-sm text-white/70">Pay via Venmo or PayPal. No subscriptions, ever.</p>
                 <Link
                   href="/account"
-                  className="mt-6 block w-full text-center py-3 px-4 rounded-full bg-white text-blue-700 font-bold text-sm hover:bg-blue-50 transition-colors shadow"
+                  className="mt-6 block w-full text-center py-3 px-4 rounded-full bg-gold text-navy font-bold text-sm hover:bg-gold-dark transition-colors shadow"
                 >
                   Upgrade now
                 </Link>
@@ -125,9 +125,9 @@ export default function MembershipPage() {
             <p className="text-sm text-gray-600 leading-relaxed">
               Send ~$29 via{" "}
               <strong>Venmo (@riseprep)</strong> or{" "}
-              <strong>PayPal (advait.aadhya@gmail.com)</strong>, then email{" "}
-              <a href="mailto:advait.aadhya@gmail.com" className="text-blue-700 underline">
-                advait.aadhya@gmail.com
+              <strong>PayPal (saipardhu.nadendla@gmail.com)</strong>, then email{" "}
+              <a href="mailto:saipardhu.nadendla@gmail.com" className="text-navy underline">
+                saipardhu.nadendla@gmail.com
               </a>{" "}
               with your Rise Prep account email. Access is granted within 24 hours.
             </p>
@@ -140,11 +140,11 @@ export default function MembershipPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-500 text-sm">
             Questions?{" "}
-            <a href="mailto:advait.aadhya@gmail.com" className="text-blue-700 font-medium hover:underline">
+            <a href="mailto:saipardhu.nadendla@gmail.com" className="text-navy font-medium hover:underline">
               Email us
             </a>{" "}
             or{" "}
-            <Link href="/booking" className="text-blue-700 font-medium hover:underline">
+            <Link href="/booking" className="text-navy font-medium hover:underline">
               book a free intro session.
             </Link>
           </p>

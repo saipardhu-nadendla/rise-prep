@@ -101,7 +101,7 @@ export default function AdminPage() {
     <main className="min-h-screen bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-2xl font-extrabold text-gray-900">Admin — Users</h1>
+          <h1 className="text-2xl font-extrabold text-gray-900">Admin: Users</h1>
           <span className="text-sm text-gray-500">{users.length} total users</span>
         </div>
 
@@ -130,7 +130,7 @@ export default function AdminPage() {
               {users.map((user) => (
                 <tr key={user.id} className="hover:bg-gray-50 transition-colors">
                   <td className="px-6 py-4 font-medium text-gray-900">
-                    {user.name ?? "—"}
+                    {user.name ?? "N/A"}
                   </td>
                   <td className="px-6 py-4 text-gray-600">{user.email}</td>
                   <td className="px-6 py-4 text-gray-500">
@@ -140,7 +140,7 @@ export default function AdminPage() {
                     <span
                       className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full ${
                         user.tier === "paid"
-                          ? "bg-blue-100 text-blue-700"
+                          ? "bg-navy-light text-navy"
                           : "bg-green-100 text-green-700"
                       }`}
                     >
@@ -151,10 +151,10 @@ export default function AdminPage() {
                     <button
                       onClick={() => toggleTier(user.id, user.tier)}
                       disabled={toggling === user.id}
-                      className="text-xs font-semibold text-blue-700 hover:underline disabled:opacity-50"
+                      className="text-xs font-semibold text-navy hover:underline disabled:opacity-50"
                     >
                       {toggling === user.id
-                        ? "Updating…"
+                        ? "Updating..."
                         : user.tier === "free"
                         ? "→ Upgrade to paid"
                         : "→ Downgrade to free"}

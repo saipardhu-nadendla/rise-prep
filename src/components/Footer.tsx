@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-auto">
+    <footer className="bg-navy-dark text-gray-300 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -49,7 +49,7 @@ export default function Footer() {
                 <a href="#" className="hover:text-white transition-colors">TikTok</a>
               </li>
               <li>
-                <a href="mailto:advait.aadhya@gmail.com" className="hover:text-white transition-colors">
+                <a href="mailto:saipardhu.nadendla@gmail.com" className="hover:text-white transition-colors">
                   Contact
                 </a>
               </li>
@@ -57,9 +57,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-gray-800 pt-6 text-xs text-gray-500 flex flex-col sm:flex-row justify-between gap-2">
+        <div className="mt-10 border-t border-gray-700 pt-6 text-xs text-gray-500 flex flex-col sm:flex-row justify-between gap-2">
           <p>© {new Date().getFullYear()} Rise Prep. All rights reserved.</p>
-          <p>Built to help students score higher.</p>
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
