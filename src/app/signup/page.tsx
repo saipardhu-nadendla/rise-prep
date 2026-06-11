@@ -43,7 +43,7 @@ export default function SignupPage() {
       return;
     }
 
-    router.push("/lessons");
+    router.push("/");
   }
 
   return (
