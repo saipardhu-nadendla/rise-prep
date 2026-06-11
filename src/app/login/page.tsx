@@ -3,11 +3,10 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 function LoginForm() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get("callbackUrl") || "/lessons";
 
@@ -32,7 +31,7 @@ function LoginForm() {
       return;
     }
 
-    router.push(callbackUrl);
+    window.location.href = callbackUrl;
   }
 
   return (

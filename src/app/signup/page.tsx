@@ -3,10 +3,8 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function SignupPage() {
-  const router = useRouter();
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -39,11 +37,11 @@ export default function SignupPage() {
     if (signInRes?.error) {
       setError("Account created but login failed. Please log in manually.");
       setLoading(false);
-      router.push("/login");
+      window.location.href = "/login";
       return;
     }
 
-    router.push("/lessons");
+    window.location.href = "/lessons";
   }
 
   return (

@@ -17,7 +17,8 @@
       "Bash(curl -s \"https://nextjs.org/docs/messages/middleware-to-proxy\")",
       "Bash(grep *)",
       "Bash(cp /Users/sainadendla/Downloads/RisePrep.png /Users/sainadendla/rise-prep/public/logo.png)",
-      "Bash(cp /Users/sainadendla/Downloads/RisePrep.png /Users/sainadendla/rise-prep/src/app/icon.png)"
+      "Bash(cp /Users/sainadendla/Downloads/RisePrep.png /Users/sainadendla/rise-prep/src/app/icon.png)",
+      "Bash(node *)"
     ]
   }
 }
